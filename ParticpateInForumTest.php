@@ -9,11 +9,13 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class ParticpateInForum extends TestCase
 {
+  use DatabaseMigrations;
     /**
      * A basic feature test example.
      *
      * @return void
      */
+
     public function test_an_authenticated_user_may_participate_in_forum_threads()
     {
        //Given we have an autheniticated user
